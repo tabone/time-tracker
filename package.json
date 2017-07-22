@@ -1,0 +1,23 @@
+{
+  "name": "time-tracker",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tabone/time-tracker.git"
+  },
+  "keywords": [
+    "time",
+    "tracker"
+  ],
+  "author": "Luca Tabone <taboneluca3@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tabone/time-tracker/issues"
+  },
+  "homepage": "https://github.com/tabone/time-tracker#readme"
+}
