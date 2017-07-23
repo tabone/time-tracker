@@ -7,6 +7,7 @@ const path = require('path')
  * Promise object resolved with an array of objects containing the name and
  * options of each component that should be registered with Vue.
  * @type {Promise}
+ * @module src/components/index
  */
 module.exports = retrieveComponents().then(retrieveComponentsOptions)
 
