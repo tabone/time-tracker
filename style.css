@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-layout__header-row {
+  padding-left:1em;
+}
+
+.app-layout__content {
+  padding: 1.5em 1em;
+}
+
+.app-task {
+  min-height: auto;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.app-task__content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  overflow:visible;
+}
+
+.app-task__content-action {
+  width: 55px;
+}
+
+.app-task__content-name {
+  flex: 1;
+}
+
+.app-task__content-time {
+  text-align: right;
+}

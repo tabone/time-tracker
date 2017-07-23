@@ -4,16 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Material Design Lite Stylesheet -->
     <link rel="stylesheet" href="node_modules/material-design-lite/dist/material.deep_orange-blue.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Dialog Polyfill StyleSheet-->
+    <link rel="stylesheet" href="node_modules/dialog-polyfill/dialog-polyfill.css">
+
+    <!-- App StyleSheet -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="app">
-      <div v-bind:is="page"></div>
+    <div class="app mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="app-layout__header-row mdl-layout__header-row">
+          <span class="mdl-layout-title">Time Tracker</span>
+        </div>
+      </header>
+      <div class="app-layout__content mdl-layout__content">
+        <div v-bind:is="page"></div>
+      </div>
     </div>
 
+    <!-- Material Design Lite JS -->
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Vue JS -->
     <script src="node_modules/vue/dist/vue.min.js"></script>
+    <!-- Dialog Polyfill JS -->
+    <script src="node_modules/dialog-polyfill/dialog-polyfill.js"></script>
+    <!-- App JS -->
     <script src="app.js"></script>
   </body>
 </html>
