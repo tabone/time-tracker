@@ -2,15 +2,7 @@
   <div class="mdl-dialog__content">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <label class="mdl-textfield__label">Enter task name...</label>
-      <input class="mdl-textfield__input" v-model="name"/>
+      <input class="mdl-textfield__input" v-model="name" v-on:keydown.enter="createTask"/>
     </div>
-  </div>
-  <div class="mdl-dialog__actions">
-    <button class=" mdl-button mdl-js-button mdl-button--colored mdl-button--raised" v-on:click="createTask">
-      Create
-    </button>
-    <button class="mdl-button mdl-js-button" v-on:click="closeDialog">
-      Cancel
-    </button>
   </div>
 </dialog>
