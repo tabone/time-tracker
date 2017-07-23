@@ -1,0 +1,12 @@
+<div>
+  <div is="new-task" v-on:create-task="createTask"></div>
+  <div is="task"
+    v-for="task in tasks"
+    v-bind:key="task.id"
+    v-bind:id="task.id"
+    v-bind:name="task.name"
+    v-bind:entries="task.entries"
+    v-bind:ongoingTaskID="ongoingTaskID"
+    v-on:start-stop-task="startStopTask"
+    v-on:delete-task="deleteTask"></div>
+</div>
