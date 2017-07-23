@@ -1,0 +1,21 @@
+<div tabindex="0" class="app-task mdl-card mdl-shadow--2dp"
+  v-on:keydown.ctrl.shift.83="startStopTask"
+  v-on:keydown.ctrl.shift.68="deleteTask">
+  <div class="mdl-card__title">
+    <div class="app-task__content mdl-card__title-text">
+      <div class="app-task__content-action">
+        <button tabindex="-1" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect"
+          v-bind:class="{ 'mdl-button--colored': isOngoingTask }"
+          v-on:click="startStopTask">
+          <i class="material-icons">{{actionIcon}}</i>
+        </button>
+      </div>
+      <div class="app-task__content-name">
+        {{name}}
+      </div>
+      <div class="app-task__content-time">
+        {{time}}
+      </div>
+    </div>
+  </div>
+</div>
