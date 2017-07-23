@@ -33,10 +33,8 @@ app.on('ready', () => {
     protocol: 'file'
   }))
 
-  win.webContents.openDevTools()
-
   // Intialize tray instance.
-  tray = new Tray('icon.png')
+  tray = new Tray(path.join(__dirname, 'logo.png'))
 
   // Create the context menu of the Tray instance.
   const contextMenu = Menu.buildFromTemplate([
